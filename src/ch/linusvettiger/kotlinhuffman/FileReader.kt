@@ -20,8 +20,13 @@ fun readHuffmanTree(fileName: String): HashMap<Char, String>? {
 fun readInputFile(fileName: String): List<Int>? {
     try {
         File(fileName).readBytes().forEach { println(it) }
-    } catch(e: Exception) {
+    } catch (e: Exception) {
         e.printStackTrace()
     }
     return null
+}
+fun readFile(path: String): String {
+    val f = File(path)
+
+    return f.readText()
 }

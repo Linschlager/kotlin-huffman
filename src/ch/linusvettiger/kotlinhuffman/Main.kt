@@ -1,12 +1,8 @@
 package ch.linusvettiger.kotlinhuffman
 
 fun main(args: Array<String>) {
+    val input = readFile("input/sample-text.txt")
+    val frequency = analyzeText(input)
 
-    val tree = readHuffmanTree("input/dec_tab-mada.txt")
-    val input = readInputFile("input/output-mada.dat")
-
-    println(tree)
-    println(input)
-    //input!!.forEach { print(revList[it]) }
-
+    print(frequency)
 }
