@@ -1,0 +1,2 @@
+package ch.linusvettiger.kotlinhuffman
+
