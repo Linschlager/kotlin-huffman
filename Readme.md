@@ -18,7 +18,7 @@ You can find the executable JAR-file [here](/artifacts/kotlin-huffman.jar)
 
 ### Example usage
 ```bash
-java -jar huffman.jar --file=input/output-mada.dat --ht-file=input/dec_tab-mada.txt --decode
+java -jar kotlin-huffman.jar --file=input/output-mada.dat --ht-file=input/dec_tab-mada.txt --decode
 
-java -jar huffman.jar --file=input/sample-text.txt --encode --ht-out=out/dec_tab-mada.txt --out=out/output-mada.dat
+java -jar kotlin-huffman.jar --file=input/sample-text.txt --encode --ht-out=out/dec_tab-mada.txt --out=out/output-mada.dat
 ```
