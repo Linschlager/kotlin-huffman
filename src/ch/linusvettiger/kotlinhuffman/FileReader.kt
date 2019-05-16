@@ -2,28 +2,32 @@ package ch.linusvettiger.kotlinhuffman
 
 import java.io.File
 
-fun readHuffmanTree(fileName: String): HashMap<Char, String>? {
+fun readHuffmanTree(fileName: String): HashMap<String, Char> {
     try {
-        val map = HashMap<Char, String>()
+        val map = HashMap<String, Char>()
         File(fileName).readLines().first().split('-').forEach {
             val pair = it.split(':')
-            val key = pair[0].toInt().toChar()
-            map[key] = pair[1]
+            val key = pair[0].toByte().toChar()
+            map[pair[1]] = key
         }
         return map
     } catch(e: Exception) {
         e.printStackTrace()
     }
-    return null
+    return HashMap()
 }
 
-fun readInputFile(fileName: String): List<Int>? {
+fun readInputFile(fileName: String): List<String> {
     try {
-        File(fileName).readBytes().forEach { println(it) }
+        return File(fileName).readBytes().map {
+            var s = it.toUByte().toString(2)
+            while (s.length % 8 != 0) s = "0$s"
+            s
+        }
     } catch (e: Exception) {
         e.printStackTrace()
     }
-    return null
+    return emptyList()
 }
 fun readFile(path: String): String {
     val f = File(path)

@@ -1,29 +1,38 @@
 package ch.linusvettiger.kotlinhuffman
 
-class HuffmanTree() {
-    private val internalMap: HashMap<Char, String> = HashMap()
+open class Node(val key: String)
+class LeafNode(key: String, val char: Char): Node(key)
+class BranchNode(key: String, var left: Node?, var right: Node?): Node(key) {
+    constructor(key: String): this(key, null, null)
+    constructor(key: String, left: Node?): this(key, left, null)
+}
 
-    fun getByChar(c: Char): String? {
-        return internalMap[c]
+fun createHT(frequency: CharFrequency): BranchNode {
+    val nodes = HashMap<String, Node>()
+    // Create a LeafNode for each Char
+    frequency.keys().forEach { nodes[it] = LeafNode(it, it[0]) }
+
+    var pointer = BranchNode("")
+    while (frequency.keys().count() > 1) {
+        // First minValue
+        val minLeft = frequency.min()!!.key
+        val minLeftV = frequency.remove(minLeft)
+
+        // second minValue
+        val minRight = frequency.min()!!.key
+        val minRightV = frequency.remove(minRight)
+
+        // Combine the two minimal frequencies
+        frequency.setValue(minLeft+minRight, minLeftV+minRightV)
+
+        // Create the new bottom branch
+        val newB = BranchNode(minLeft+minRight, nodes[minLeft], nodes[minRight])
+        nodes.remove(minLeft)
+        nodes.remove(minRight)
+        nodes[newB.key] = newB
+
+        pointer = BranchNode(newB.key, newB)
     }
+    return (pointer.left as BranchNode?)!!
 
-    fun getBySeq(seq: String): Char? {
-        return internalMap.entries.first { it.value === seq }.key
-    }
-
-    fun add(c: Char, seq: String): Boolean {
-        return when {
-            internalMap.containsValue(seq) -> false
-            internalMap.containsKey(c) -> false
-            else -> {
-                internalMap[c] = seq
-                true
-            }
-        }
-
-    }
-
-    fun length(): Int {
-        return internalMap.size
-    }
 }
