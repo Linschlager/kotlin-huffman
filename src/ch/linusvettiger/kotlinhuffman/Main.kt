@@ -1,6 +1,7 @@
 package ch.linusvettiger.kotlinhuffman
 
 fun main(args: Array<String>) {
+    // If no arguments are provided, output usage
     if (args.isEmpty()) {
         println("Usage:")
         println("--file=<path-to-file> File to encode/decode")
@@ -18,6 +19,7 @@ fun main(args: Array<String>) {
     var mode = ""
     var debug = false
 
+    // Read in all arguments
     args.forEach {
         val parts = if (it.contains('=')) {
             it.split('=')
@@ -66,7 +68,7 @@ fun main(args: Array<String>) {
             if (htOutFile.isNotEmpty()) {
                 writeFile(htOutFile, outHt)
             } else {
-                print(outHt)
+                println(outHt)
             }
         }
         mode === "decode" -> {

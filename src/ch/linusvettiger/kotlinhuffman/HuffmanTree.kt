@@ -1,5 +1,8 @@
 package ch.linusvettiger.kotlinhuffman
 
+/*
+    Class Structure to store all nodes in the tree
+ */
 open class Node(val key: String)
 class LeafNode(key: String, val char: Char): Node(key)
 class BranchNode(key: String, var left: Node?, var right: Node?): Node(key) {
@@ -7,6 +10,9 @@ class BranchNode(key: String, var left: Node?, var right: Node?): Node(key) {
     constructor(key: String, left: Node?): this(key, left, null)
 }
 
+/**
+ * Generates a Huffman tree based on the frequency of characters in the input string
+ */
 fun createHT(frequency: CharFrequency): BranchNode {
     val nodes = HashMap<String, Node>()
     // Create a LeafNode for each Char
@@ -31,8 +37,10 @@ fun createHT(frequency: CharFrequency): BranchNode {
         nodes.remove(minRight)
         nodes[newB.key] = newB
 
+        // Add the newly created BranchNode to the rest of the structure
         pointer = BranchNode(newB.key, newB)
     }
+    // Output the left
     return (pointer.left as BranchNode?)!!
 
 }
