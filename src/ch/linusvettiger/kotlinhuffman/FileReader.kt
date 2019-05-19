@@ -18,17 +18,18 @@ fun readHuffmanTree(fileName: String): HashMap<String, Char> {
     return HashMap()
 }
 
-fun readInputFile(fileName: String): List<String> {
+fun readInputFile(fileName: String): String {
     try {
-        return File(fileName).readBytes().map {
+        val bytes = File(fileName).readBytes().joinToString("") {
             var s = it.toUByte().toString(2) // Parse each byte to unsigned byte to not have negative numbers and then parse to binary number
-            while (s.length % 8 != 0) s = "0$s" // Add Padding to fill the byte
+            while (s.length < 8) s = "0$s" // Add Padding to fill the byte
             s
         }
+        return bytes.substring(0,bytes.lastIndexOf("1")-1) // remove chars after last 1 including all following zeroes
     } catch (e: Exception) {
         e.printStackTrace()
     }
-    return emptyList()
+    return ""
 }
 
 fun readFile(path: String): String {

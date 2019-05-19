@@ -55,9 +55,7 @@ fun main(args: Array<String>) {
             val dict = generateDictionary(ht)
             var encodedText = encode(input, dict).joinToString("")
 
-            if (encodedText.length % 8 != 0) {
-                encodedText += "1"
-            }
+            encodedText += "1"
             while (encodedText.length % 8 != 0) {
                 encodedText += "0"
             }
@@ -72,7 +70,7 @@ fun main(args: Array<String>) {
             }
         }
         mode === "decode" -> {
-            val input = readInputFile(inputFile).joinToString("")
+            val input = readInputFile(inputFile)
             val ht = readHuffmanTree(htFile)
 
             output = decode(input, ht)
