@@ -18,14 +18,13 @@ fun createHT(frequency: CharFrequency): BranchNode {
     // Create a LeafNode for each Char
     frequency.keys().forEach { nodes[it] = LeafNode(it, it[0]) }
 
-    var pointer = BranchNode("")
     while (frequency.keys().count() > 1) {
         // First minValue
-        val minLeft = frequency.min()!!.key
+        val minLeft = frequency.min()
         val minLeftV = frequency.remove(minLeft)
 
         // second minValue
-        val minRight = frequency.min()!!.key
+        val minRight = frequency.min()
         val minRightV = frequency.remove(minRight)
 
         // Combine the two minimal frequencies
@@ -36,11 +35,8 @@ fun createHT(frequency: CharFrequency): BranchNode {
         nodes.remove(minLeft)
         nodes.remove(minRight)
         nodes[newB.key] = newB
-
-        // Add the newly created BranchNode to the rest of the structure
-        pointer = BranchNode(newB.key, newB)
     }
     // Output the left
-    return (pointer.left as BranchNode?)!!
+    return (nodes[nodes.keys.first()] as BranchNode?)!!
 
 }

@@ -54,8 +54,8 @@ class CharFrequency {
     /**
      * @return the least frequent item in the list
      */
-    fun min(): Map.Entry<String, Int>? {
-        return internalList.minBy { it.value }
+    fun min(): String {
+        return internalList.minBy { it.value }!!.key
     }
 
     /**

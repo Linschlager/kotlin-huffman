@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="kotlin-huffman:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ef89a781-79df-457d-b94a-7a6a52bc1213" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/FileReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/FileReader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/kotlin-huffman.jar" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts/kotlin-huffman.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/CharFrequency.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/CharFrequency.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HuffmanTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HuffmanTree.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,17 +42,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+            <state relative-caret-position="520">
+              <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HuffmanTree.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/CharFrequency.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/FileReader.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+              <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -78,12 +101,12 @@
         <option value="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/TextAnalyzer.kt" />
         <option value="$PROJECT_DIR$/test/ch/linusvettiger/kotlinhuffman/TextAnalyzerTest.kt" />
         <option value="$PROJECT_DIR$/test/ch/linusvettiger/kotlinhuffman/CharFrequencyTest.kt" />
-        <option value="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/CharFrequency.kt" />
-        <option value="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HuffmanTree.kt" />
         <option value="$PROJECT_DIR$/test/ch/linusvettiger/kotlinhuffman/HTGeneratorTest.kt" />
         <option value="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HTGenerator.kt" />
         <option value="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Main.kt" />
         <option value="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/FileReader.kt" />
+        <option value="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/CharFrequency.kt" />
+        <option value="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HuffmanTree.kt" />
       </list>
     </option>
   </component>
@@ -116,6 +139,11 @@
             <path>
               <item name="kotlin-huffman" type="b2602c69:ProjectViewProjectNode" />
               <item name="kotlin-huffman" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlin-huffman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-huffman" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -140,10 +168,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/input" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -196,7 +224,7 @@
     <configuration name="ch.linusvettiger.kotlinhuffman.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="kotlin-huffman" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="--file=input/output-mada.dat --ht-file=input/dec_tab-mada.txt --decode " />
+      <option name="PROGRAM_PARAMETERS" value="--ht-file=out/dec_tab-mada.txt --file=out/output-mada.dat --decode" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -204,6 +232,9 @@
       <option name="WORKING_DIRECTORY" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="kotlin-huffman:jar" />
+        </option>
       </method>
     </configuration>
     <list>
@@ -231,8 +262,16 @@
       <updated>1557226912292</updated>
       <workItem from="1557226916367" duration="1171000" />
       <workItem from="1557815649492" duration="8101000" />
-      <workItem from="1558307380391" duration="359000" />
+      <workItem from="1558307380391" duration="1038000" />
     </task>
+    <task id="LOCAL-00001" summary="rebuilt JAR with new changes">
+      <created>1558307946878</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558307946878</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -247,7 +286,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9631000" />
+    <option name="totallyTimeSpent" value="10310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -287,6 +326,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rebuilt JAR with new changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="rebuilt JAR with new changes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/ch/linusvettiger/kotlinhuffman/MainTest" />
@@ -340,28 +383,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HTGenerator.kt" />
-    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HuffmanTree.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/ch/linusvettiger/kotlinhuffman/HTGeneratorTest.kt" />
-    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/CharFrequency.kt">
+    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/FileReader.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="352">
+          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Decoder.kt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+        <state relative-caret-position="520">
+          <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -371,10 +404,26 @@
     <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Encoder.kt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/FileReader.kt">
+    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Decoder.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/output-mada.dat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/dec_tab-mada.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/CharFrequency.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        <state relative-caret-position="433">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HuffmanTree.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -384,10 +433,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>kotlin-huffman:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -435,7 +486,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -455,6 +505,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>KotlinJavaRuntime</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
