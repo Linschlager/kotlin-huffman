@@ -5,10 +5,7 @@ package ch.linusvettiger.kotlinhuffman
  */
 open class Node(val key: String)
 class LeafNode(key: String, val char: Char): Node(key)
-class BranchNode(key: String, var left: Node?, var right: Node?): Node(key) {
-    constructor(key: String): this(key, null, null)
-    constructor(key: String, left: Node?): this(key, left, null)
-}
+class BranchNode(key: String, var left: Node?, var right: Node?): Node(key)
 
 /**
  * Generates a Huffman tree based on the frequency of characters in the input string
