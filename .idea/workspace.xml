@@ -8,8 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ef89a781-79df-457d-b94a-7a6a52bc1213" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artifacts/kotlin-huffman.jar" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts/kotlin-huffman.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/CharFrequency.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/CharFrequency.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HuffmanTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HuffmanTree.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,7 +21,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Decoder.kt">
           <provider selected="true" editor-type-id="text-editor" />
@@ -42,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
+            <state relative-caret-position="1200">
               <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
             </state>
           </provider>
@@ -51,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HuffmanTree.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <state relative-caret-position="576">
+              <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -60,7 +58,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/CharFrequency.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
+            <state relative-caret-position="928">
               <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
             </state>
           </provider>
@@ -116,9 +114,8 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="966" />
-    <option name="width" value="954" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1920" />
     <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -156,8 +153,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,7 +259,8 @@
       <updated>1557226912292</updated>
       <workItem from="1557226916367" duration="1171000" />
       <workItem from="1557815649492" duration="8101000" />
-      <workItem from="1558307380391" duration="1038000" />
+      <workItem from="1558307380391" duration="1603000" />
+      <workItem from="1558362751618" duration="384000" />
     </task>
     <task id="LOCAL-00001" summary="rebuilt JAR with new changes">
       <created>1558307946878</created>
@@ -271,7 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1558307946878</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed algorithm">
+      <created>1558336694475</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558336694475</updated>
+    </task>
+    <task id="LOCAL-00003" summary="removed unnecessary constructors">
+      <created>1558342091742</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558342091742</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -286,13 +298,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10310000" />
+    <option name="totallyTimeSpent" value="11259000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2550586" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25772098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -301,7 +313,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31946903" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31946903" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -329,7 +341,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rebuilt JAR with new changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="rebuilt JAR with new changes" />
+    <MESSAGE value="fixed algorithm" />
+    <MESSAGE value="removed unnecessary constructors" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary constructors" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/ch/linusvettiger/kotlinhuffman/MainTest" />
@@ -384,6 +398,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HTGenerator.kt" />
     <entry file="file://$PROJECT_DIR$/test/ch/linusvettiger/kotlinhuffman/HTGeneratorTest.kt" />
+    <entry file="file://$PROJECT_DIR$/out/output-mada.dat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/dec_tab-mada.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Decoder.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Encoder.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/FileWriter.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/CharFrequency.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="928">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/FileReader.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -391,39 +434,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/FileWriter.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Encoder.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/Decoder.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/output-mada.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/dec_tab-mada.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/CharFrequency.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/linusvettiger/kotlinhuffman/HuffmanTree.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        <state relative-caret-position="576">
+          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
         </state>
       </provider>
     </entry>

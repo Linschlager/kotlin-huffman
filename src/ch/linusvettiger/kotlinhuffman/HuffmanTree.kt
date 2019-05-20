@@ -34,6 +34,5 @@ fun createHT(frequency: CharFrequency): BranchNode {
         nodes[newB.key] = newB
     }
     // Output the left
-    return (nodes[nodes.keys.first()] as BranchNode?)!!
-
+    return nodes[nodes.keys.first()] as BranchNode
 }
